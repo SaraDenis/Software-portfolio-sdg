@@ -1,5 +1,5 @@
 ---
-// src/pages/index.astro
+// src/pages/index.astro - Versión con Paleta Vintage
 ---
 
 <html lang="es">
@@ -11,8 +11,10 @@
       body {
         margin: 0;
         font-family: system-ui, -apple-system, sans-serif;
-        background: #0f172a;
-        color: #f8fafc;
+        /* Fondo: Vintage Cream */
+        background: #EBE1C6;
+        /* Texto principal: Antique Bronze */
+        color: #81785A;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -27,45 +29,56 @@
       h1 {
         font-size: 3rem;
         margin-bottom: 0.5rem;
-        background: -webkit-linear-gradient(45deg, #38bdf8, #818cf8);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
+        font-weight: 700;
+        /* Mantiene el color Antique Bronze para buena legibilidad */
+        color: #81785A;
       }
       h2 {
         font-size: 1.5rem;
         font-weight: 400;
-        color: #94a3b8;
+        /* Antique Bronze, igual que el cuerpo */
+        color: #81785A;
         margin-bottom: 2rem;
       }
       .badge {
         display: inline-block;
         padding: 0.5rem 1rem;
-        background: #1e293b;
-        border: 1px solid #334155;
+        /* Fondo: Muted Sage */
+        background: #919D85;
+        /* Texto: Vintage Cream */
+        color: #EBE1C6;
+        border: 1px solid #81785A; /* Antique Bronze para definición */
         border-radius: 9999px;
         font-size: 0.875rem;
         letter-spacing: 0.05em;
         text-transform: uppercase;
         margin-bottom: 1.5rem;
+        font-weight: 600;
       }
       p {
         line-height: 1.6;
-        color: #cbd5e1;
+        /* Asegura que el párrafo herede el color Antique Bronze */
+        color: inherit;
       }
       .links {
         margin-top: 2.5rem;
       }
       a {
-        color: #0f172a;
-        background: #38bdf8;
+        /* Texto del botón: Vintage Cream */
+        color: #EBE1C6;
+        /* Fondo del botón: Degradado Dusty Rose -> Lavender Purple */
+        background: -webkit-linear-gradient(45deg, #C496A1, #8E88A3);
         text-decoration: none;
         font-weight: 600;
         padding: 0.75rem 1.5rem;
         border-radius: 8px;
         transition: all 0.3s ease;
+        border: 1px solid transparent;
       }
       a:hover {
-        background: #7dd3fc;
+        /* Hover: Fondo sólido Antique Bronze */
+        background: #81785A;
+        border-color: #919D85; /* Muted Sage para el borde */
         transform: translateY(-2px);
       }
     </style>
@@ -76,8 +89,8 @@
       <h1>Sara Denis</h1>
       <h2>Frontend Developer & UX/UI</h2>
       <p>
-        Soy Ingeniera de Software [cite: 4] diseñando y programando mi nuevo espacio web. 
-        Mientras preparo mis proyectos de CMS, E-commerce y diseño de interfaces[cite: 10, 11], 
+        Soy Ingeniera de Software diseñando y programando mi nuevo espacio web. 
+        Mientras preparo mis proyectos de CMS, E-commerce y diseño de interfaces, 
         puedes conocer más sobre mi trayectoria en mi perfil profesional.
       </p>
       <div class="links">
